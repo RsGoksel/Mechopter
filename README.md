@@ -1,7 +1,8 @@
 
 <p align="center">
-  <img src="https://github.com/RsGoksel/Mechopter/assets/80707238/10f648bb-0c61-411a-a24f-6b163fc8752a" width="500px"/>
+  <img src="https://github.com/RsGoksel/Mechopter/assets/80707238/7b09c1c9-1e11-4d45-a78e-80f79b94a880" width="500px"/>
 </p>
+
 
 ![Reinforcement Learning](https://img.shields.io/badge/Reinforcement%20Learning-%23000000.svg?&style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-%230377B5.svg?&style=for-the-badge)
