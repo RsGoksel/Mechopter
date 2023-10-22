@@ -9,15 +9,13 @@
 ![Pygame](https://img.shields.io/badge/Pygame-%23FFD43B.svg?&style=for-the-badge)
 ![PPO](https://img.shields.io/badge/PPO-%238BC34A.svg?&style=for-the-badge)
 ![A2C](https://img.shields.io/badge/A2C-%23FF7043.svg?&style=for-the-badge)
+![DQN](https://img.shields.io/badge/DQN-%230000FF.svg?&style=for-the-badge)
 
-# Game Explanation
+# Mech-opter  🎮 🥳
+This repository provides code exercise and solution for Reinforcement Learning. All code is written in Python and uses custom RL environment from OpenAI Gym. <br><br>
+Goal was train the Reinforcement Learning Drone Agent mastering the flying and accurately hitting a target balloon. A2C was used primaly, PPO and DQN also can be used. Explanations and details are down below ↓ 
 
-Goal was train the Reinforcement Learning Drone Agent mastering the flying and accurately hitting a target balloon. A2C was used primaly, PPO and DQN also can be used. Explanations and details are down below ↓ 🎮 🥳
-
-
-
-
-# Game Screen
+## Game Screen
 <img src="https://github.com/RsGoksel/Mechopter/assets/80707238/9172b1d7-d33a-4327-a52b-e9b6800d0881" alt="Quad" width="500" />
 ________________________________________________________________________________________________________________
 
