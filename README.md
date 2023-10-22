@@ -84,4 +84,5 @@ $ python evaluate.py --model models/200k
 ```
 
 # After the Training 🦾
+<img src="https://github.com/RsGoksel/Mechopter/assets/80707238/ed3ae300-eb43-433c-b264-ab1dd0de0a22" alt="Quad" width="500" />
 ________________________________________________________________________________________________________________
