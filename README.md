@@ -11,7 +11,7 @@
 ![A2C](https://img.shields.io/badge/A2C-%23FF7043.svg?&style=for-the-badge)
 ![DQN](https://img.shields.io/badge/DQN-%230000FF.svg?&style=for-the-badge)
 
-# Mech-opter  🎮 🥳
+# Mech-opter   🎮 
 This repository provides code exercise and solution for Reinforcement Learning. All code is written in Python and uses custom RL environment from OpenAI Gym. <br><br>
 Goal was train the Reinforcement Learning Drone Agent mastering the flying and accurately hitting a target balloon. A2C was used primaly, PPO and DQN also can be used. Explanations and details are down below ↓ 
 
