@@ -19,7 +19,7 @@ Goal was train the Reinforcement Learning Drone Agent mastering the flying and a
 <img src="https://github.com/RsGoksel/Mechopter/assets/80707238/9172b1d7-d33a-4327-a52b-e9b6800d0881" alt="Quad" width="500" />
 ________________________________________________________________________________________________________________
 
-# Environment & Mechanisms
+# Environment & Game Mechanism
 
 ### _**Reward:**_
  
