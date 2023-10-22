@@ -17,7 +17,10 @@ This repository provides code exercise and solution for Reinforcement Learning. 
 Goal was train the Reinforcement Learning Drone Agent mastering the flying and accurately hitting a target balloon. A2C was used primaly, PPO and DQN also can be used. Explanations and details are down below ↓ 
 
 ## Game Screen
-<img src="https://github.com/RsGoksel/Mechopter/assets/80707238/9172b1d7-d33a-4327-a52b-e9b6800d0881" alt="Quad" width="500" />
+<img src="https://github.com/RsGoksel/Mechopter/assets/80707238/6baeecc8-5a5c-4371-a230-8b26f793121e" alt="Quad" width="500" />
+
+
+
 ________________________________________________________________________________________________________________
 
 # Environment & Game Mechanism
@@ -85,5 +88,7 @@ $ python evaluate.py --model models/200k
 ```
 
 # After the Training 🦾
-<img src="https://github.com/RsGoksel/Mechopter/assets/80707238/ed3ae300-eb43-433c-b264-ab1dd0de0a22" alt="Quad" width="500" />
+<img src="https://github.com/RsGoksel/Mechopter/assets/80707238/4d9a37e5-c4bc-4049-a45d-0c6f6ac0eedb" alt="Quad" width="500" />
+
+
 ________________________________________________________________________________________________________________
