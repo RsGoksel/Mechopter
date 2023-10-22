@@ -205,13 +205,14 @@ class droneEnv(gym.Env):
             self.reward += 1 / 60
             
                 # Penalizing to the distance to target (0.00016 is for normalize)
-            self.reward -= dist * 0.000166
+            self.reward -= dist * 0.000166 # (100*60)
 
             if dist < 45:
                 # Reward if agent closes to target
                 self.x_target = randrange(50, WIDTH - 50)
                 self.y_target = randrange(75, HEIGHT - 75)
                 self.reward += 100
+                self.target_counter += 1
         
             # If times up
             if self.time > self.time_limit:
