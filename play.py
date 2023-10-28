@@ -13,22 +13,18 @@ import Constants
 from Agent import Drone
 
 WIDTH, HEIGHT = Constants.WIDTH, Constants.HEIGHT
-
 TIME_LIMIT = Constants.TIME_LIMIT
 BACKGROUND = Constants.BACKGROUND 
-
 spriter = Constants.spriter #Image displayer
 
 class droneEnv(gym.Env):
     def __init__(self):
         super(droneEnv, self).__init__()
-
         pygame.init()
         
             # VIDEO SETTINGS
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         self.FramePerSec = pygame.time.Clock()
-    
         self.background = pygame.image.load(BACKGROUND)
         self.background = pygame.transform.scale(self.background, (WIDTH, HEIGHT))
 
@@ -58,28 +54,24 @@ class droneEnv(gym.Env):
         self.reward = 0
         self.time = 0
         self.pace = 0
-        
-            
+          
     def reset(self):
         
         self.Agent.reset()
-        
         self.x_target = randrange(50, WIDTH - 50)
         self.y_target = randrange(75, HEIGHT - 75)
 
         self.target_counter = 0
         self.reward = 0
         self.time = 0
-
         return 
-    
+
     def move(self):
         
         self.render()
         self.reward = 0.0
         self.pace += 1
         self.pace %= 8
-        
         self.time += 1 / 60
 
             # Initialize accelerations
@@ -105,7 +97,6 @@ class droneEnv(gym.Env):
         if pressed_keys[K_RIGHT]:
             thruster_right -= self.diff_amplitude
 
-        
         # Calculating accelerations with Newton's laws of motions (F = M.A)(RIP Newton)
         self.Agent.x_acceleration += (
             -(thruster_left + thruster_right) * sin(self.Agent.angle * pi / 180) / self.mass
@@ -138,14 +129,14 @@ class droneEnv(gym.Env):
             done = True
             return self.reward, done
 
-        if self.Agent.x_position < -50 or self.Agent.x_position > WIDTH + 50 or self.Agent.y_position < -50 or self.Agent.y_position > HEIGHT + 50:
+        if (self.Agent.x_position < -50 or self.Agent.x_position > WIDTH + 50 or
+            self.Agent.y_position < -50 or self.Agent.y_position > HEIGHT + 50):
+            
             self.reward -= 2
             done = True
-            
             return self.reward, done
 
         return self.reward, 0
-
 
     def render(self):
         
@@ -153,7 +144,6 @@ class droneEnv(gym.Env):
             if event.type == pygame.QUIT:
                 pygame.display.quit()
                 pygame.quit()
-                
         
         self.screen.blit(self.background, (0, 0))
         
@@ -176,13 +166,9 @@ class droneEnv(gym.Env):
             ),
         )
 
-        textsurface = self.myfont.render(
-            "Collected: " + str(self.target_counter), False, (0, 0, 0)
-        )
+        textsurface = self.myfont.render("Collected: " + str(self.target_counter), False, (0, 0, 0))
+        textsurface3 = self.myfont.render("Time: " + str(int(self.time)), False, (0, 0, 0))
         self.screen.blit(textsurface, (20, 20))
-        textsurface3 = self.myfont.render(
-            "Time: " + str(int(self.time)), False, (0, 0, 0)
-        )
         self.screen.blit(textsurface3, (20, 50))
 
         pygame.display.update()
@@ -191,14 +177,11 @@ class droneEnv(gym.Env):
     def close(self):
         pass
 
-    
 env = droneEnv()
 
-episode = 0
-
-
-done = False
+done  = False
 score = 0
+episode = 0
 
 for i in range(10):
     try:
@@ -211,7 +194,6 @@ for i in range(10):
         print('Episode: {} Score: {}'.format(episode, score))
     except:
         pass
-        
-    
+
 pygame.display.quit()
 pygame.quit()
