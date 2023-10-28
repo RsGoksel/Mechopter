@@ -7,12 +7,11 @@ TIME_LIMIT    = 60  #How many seconds will it take for one episode?
 
 # Model.learn - Hyperparameter Configure
 total_timesteps = 300000 #300k
-learning_rate  = 0.0005 #04
+learning_rate  = 0.0005 #0.004 (4*10^-3) recommended
 ent_coef       = 0.01 
 gamma          = 0.99 
 gae_lambda     = 0.95
 max_grad_norm  = 0.5
-
 
 # Physical CONSTANTS
 FPS         = 60
@@ -29,7 +28,6 @@ Model_Save_Path = "./models/" + str(int(total_timesteps/1000)) + "k.zip"
 
 tensorboard_log = "./DroneLog/"
 tensorboard_sub_folder = 'new_training' + str(total_timesteps/1000) + "k"
-
 
 # Display and asset Settings & Function
 BACKGROUND = "assets/sky.png"
