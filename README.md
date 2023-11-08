@@ -16,7 +16,7 @@
 This repository provides code exercise and solution for Reinforcement Learning. All code is written in Python and uses custom RL environment from OpenAI Gym. <br><br>
 Goal was train the Reinforcement Learning Drone Agent mastering the flying and accurately hitting a target balloon. A2C was used primaly, PPO and DQN also can be used. Explanations and details are down below ↓ 
 
-## Game Screen
+## Game Screen (Before training, trained one is down below!)
 <img src="https://github.com/RsGoksel/Mechopter/assets/80707238/6baeecc8-5a5c-4371-a230-8b26f793121e" alt="Quad" width="500" />
 
 
